@@ -1,12 +1,10 @@
+// import "./Button.scss";
+// import { Link } from 'react-router-dom';
 
-import "./Button.scss";
+// const Button = () => {
+//   return (
+//     <Link to="/new-competition">Add New Competition</Link>
+//   );
+// };
 
-const Button = ({ onClick, label }) => {
-  return (
-    <button className="button" onClick={onClick}>
-      {label}
-    </button>
-  );
-};
-
-export default Button;
+// export default Button;

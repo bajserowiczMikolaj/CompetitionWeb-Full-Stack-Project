@@ -1,92 +1,48 @@
-// import { useEffect, useState } from "react";
-// import "./App.scss";
-// import ProfileContainer from "./components/ProfileContainer/ProfileContainer";
-// import RadioButtons from "./components/RadioButtons/RadioButtons";
-// import RangeInput from "./components/RangeInput/RangeInput";
+import './App.scss';
+import CompCardContainer from './components/CompCardContainer/CompCardContainer.jsx'
+import SearchBox from './nav/SearchBox';
+import { useState,useEffect } from 'react';   
+      
+function App() {
 
-// const App = () => {
-//   const [users, setUsers] = useState([]);
-//   const [numberOfUsers, setNumberOfUsers] = useState(5);
-//   const [gender, setGender] = useState("all");
-
-//   const getUsers = async (resultNumber, genderFilter) => {
-//     const url = "https://randomuser.me/api";
-//     let urlWithParams = url + `?results=${resultNumber}`;
-
-//     if (genderFilter !== "all") {
-//       urlWithParams += `&gender=${genderFilter}`;
-//     }
-
-//     const res = await fetch(urlWithParams);
-//     const data = await res.json();
-
-//     setUsers(data.results);
-//   };
-
-//   useEffect(() => {
-//     getUsers(numberOfUsers, gender);
-//   }, [numberOfUsers, gender]);
-
-//   const handleInputChange = (event) => {
-//     setNumberOfUsers(event.target.value);
-//   };
-
-//   const handleChange = (event) => {
-//     setGender(event.target.value);
-//   };
-
-//   return (
-//     <div className="app">
-//       <h1>Random User Generator</h1>
-//       <RangeInput
-//         id="user-range"
-//         label={`Number of users: ${numberOfUsers}`}
-//         min={1}
-//         max={10}
-//         value={numberOfUsers}
-//         onChange={handleInputChange}
-//       />
-//       <RadioButtons
-//         onChange={handleChange}
-//         selected={gender}
-//         options={["all", "female", "male"]}
-//         label="Select User Gender:"
-//       />
-//       <ProfileContainer profiles={users} />
-//     </div>
-//   );
-// };
-
-// export default App;
-
-
-import { useEffect, useState } from "react";
-import "./App.scss";
-import ProfileContainer from "./components/ProfileContainer/ProfileContainer";
-
-const App = () => {
-  const [users, setUsers] = useState([]);
-
-  const getUsers = async () => {
-    const url = "https://randomuser.me/api";
-    const urlWithParams = url + `?results=30`;
-
-    const res = await fetch(urlWithParams);
-    const data = await res.json();
-
-    setUsers(data.results);
-  };
-
+  const [compsAPI, setCompsAPI] = useState([]);
+  const [search, setSearch] = useState("");
+  const [buttonState,setButtonState] =useState("")
   useEffect(() => {
-    getUsers();
-  }, []);
+    getComps();
+  }, [search]); //filetrs becouse we call it again 
+
+  const getComps = async () => {
+
+    let url = "http://localhost:8080/allCompetitions";
+  
+
+//  if (search) {
+//   url += `?=${search}&`;
+// }
+
+const res = await fetch(url); 
+let data = await res.json(); 
+setCompsAPI(data)
+
+  };
+const handleSearch = (event) =>{
+  setSearch(event.target.value.toLowerCase());
+}
+const handleClick =(event)=>{
+  setButtonState(event.target.value) 
+}
 
   return (
-    <div className="app">
-      <h1>Random User Generator</h1>
-      <ProfileContainer profiles={users} />
+    <div className="App">
+      <SearchBox
+      handleSearch={handleSearch}
+     onClick={handleClick}
+      />
+     <CompCardContainer comps={compsAPI} />
     </div>
   );
-};
+}
 
 export default App;
+//This code includes a showModal state variable that controls whether the modal is displayed or not. When the "Add Competition" button is clicked, showModal is set to true. This causes the modal to be displayed with input fields for the user to enter the details of the new competition.

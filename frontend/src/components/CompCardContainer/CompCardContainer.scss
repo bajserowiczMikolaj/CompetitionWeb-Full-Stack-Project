@@ -1,0 +1,24 @@
+.comp-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .comp-container{
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .comp-container{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

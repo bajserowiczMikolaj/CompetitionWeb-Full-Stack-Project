@@ -1,16 +1,20 @@
-// 14 lines (12 sloc)  228 Bytes
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.App {
 
-// @use "./styles/reset";
-// @use "./styles/typography";
-// @use "./styles/variables" as *;
-
-// .app {
-//   height: 100vh;
-//   overflow-x: hidden;
-//   background-color: $background-color;
-//   padding: 2rem;
-
-//  * {
-//     margin-bottom: 1.5rem;
-//   }
-// }
+ 
+    --font-roboto: "Roboto Slab", serif;
+    --font-raleway: "Raleway", sans-serif;
+    font-family: var(--font-roboto);
+    background-color: #212426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
