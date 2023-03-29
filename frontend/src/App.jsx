@@ -1,7 +1,9 @@
 import './App.scss';
+import CreateCompetition from './components/CreateCompetition/CreateCompetition';
 import CompCardContainer from './components/CompCardContainer/CompCardContainer.jsx'
 import SearchBox from './nav/SearchBox';
-import { useState,useEffect } from 'react';   
+import { useState,useEffect } from 'react';  
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
       
 function App() {
 
@@ -40,6 +42,16 @@ const handleClick =(event)=>{
      onClick={handleClick}
       />
      <CompCardContainer comps={compsAPI} />
+
+     {/* <Router>
+      <Routes>
+
+        <Route path="/greeting/create" element={<CreateCompetition />} />
+
+      </Routes>
+
+     </Router> */}
+
     </div>
   );
 }

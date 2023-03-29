@@ -1,67 +1,63 @@
-// import React from "react";
+import { useState } from "react";
+import "./NewCompForm.scss";
 
-// const NewCompForm = ({ handleSubmit, handleCloseForm, newComp, setNewComp }) => {
-//   const handleInputChange = (e) => {
-//     const { name, value } = e.target;
-//     setNewComp({ ...newComp, [name]: value });
-//   };
+/* 
+  Form styles borrowed from: 
+  https://codepen.io/banunn/pen/AFnal
+*/
 
-//   return (
-//     <div>
-//       <h2>Add New Competition</h2>
-//       <form onSubmit={handleSubmit}>
-//         <label>
-//           Competition Name:
-//           <input
-//             type="text"
-//             name="compName"
-//             value={newComp.compName}
-//             onChange={handleInputChange}
-//           />
-//         </label>
-//         <label>
-//           Location:
-//           <input
-//             type="text"
-//             name="location"
-//             value={newComp.location}
-//             onChange={handleInputChange}
-//           />
-//         </label>
-//         <label>
-//           Date:
-//           <input
-//             type="text"
-//             name="date"
-//             value={newComp.date}
-//             onChange={handleInputChange}
-//           />
-//         </label>
-//         <label>
-//           Registry Deadline:
-//           <input
-//             type="text"
-//             name="registryDedline"
-//             value={newComp.registryDedline}
-//             onChange={handleInputChange}
-//           />
-//         </label>
-//         <label>
-//           Fee:
-//           <input
-//             type="text"
-//             name="fee"
-//             value={newComp.fee}
-//             onChange={handleInputChange}
-//           />
-//         </label>
-//         <button type="submit">Submit</button>
-//         <button type="button" onClick={handleCloseForm}>
-//           Cancel
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
+const NewCompetitionForm = ({ defaultFormState, handleSubmit, formTitle }) => {
+  const [comps, setcomps] = useState(defaultFormState);
 
-// export default NewCompForm;
+  const handleValidation = event => {
+    event.preventDefault();
+
+    if (Object.values(comps).some(value => !value)) {
+      alert("Missing content, unable to proceed");
+      return;
+    }
+
+    handleSubmit(comps);
+  };
+
+  return (
+    <div className="form-container">
+      <h2 className="form-container__title">{formTitle}</h2>
+      <form className="form-container__form" onSubmit={handleValidation}>
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="your name"
+          value={comps.createdBy}
+          onInput={event => setcomps({ ...comps, createdBy: event.target.value })}
+        />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="greeting"
+          value={comps.greeting}
+          onInput={event => setcomps({ ...comps, greeting: event.target.value })}
+        />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="origin country"
+          value={comps.originCountry}
+          onInput={event => setcomps({ ...comps, originCountry: event.target.value })}
+        />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="nationality"
+          value={comps.nationality}
+          onInput={event => setcomps({ ...comps, nationality: event.target.value })}
+        />
+        <button type="submit" className="form-container__button">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default NewCompetitionForm;
