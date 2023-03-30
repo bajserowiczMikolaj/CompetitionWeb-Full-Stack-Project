@@ -2,23 +2,73 @@
   {
     "id": 1,
     "compName":"ABU DHABI GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - LONDON - PROFESSIONAL" ,
-    "imgURL": "https://www.bjjee.com/wp-content/uploads/2022/01/Gordon-Ryan-Andre-Galvao-1.jpg",
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
     "location": "Copper Box Arena, London, UK " ,
     "date": "20/06/2023" ,
     "registryDedline": "01/06/2023",
     "fee": 90,
     "competitiorsLimit":800,
-    "requireQualify":true
+    "requireQualify":true,
+    "email": "mbajsrowicz@gmail.com"
   },
   {
-    "id": 1,
+    "id": 2,
     "compName":"GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - Barcelona - PROFESSIONAL" ,
-    "imgURL": "https://www.bjjee.com/wp-content/uploads/2022/01/Gordon-Ryan-Andre-Galvao-1.jpg",
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
     "location": "Pabellón Muixara, Barcelona, ES " ,
     "date": "30/07/2023" ,
     "registryDedline": "20/07/2023",
     "fee": 50,
     "competitiorsLimit":500,
-    "requireQualify":false
+    "requireQualify":false,
+    "email": "mbajsrowicz@gmail.com"
+  },
+  {
+    "id": 3,
+    "compName":"ABU DHABI GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - LONDON - PROFESSIONAL" ,
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+    "location": "Copper Box Arena, London, UK " ,
+    "date": "20/06/2023" ,
+    "registryDedline": "01/06/2023",
+    "fee": 90,
+    "competitiorsLimit":800,
+    "requireQualify":true,
+    "email": "mbajsrowicz@gmail.com"
+  },
+  {
+    "id": 4,
+    "compName":"GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - Barcelona - PROFESSIONAL" ,
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+    "location": "Pabellón Muixara, Barcelona, ES " ,
+    "date": "30/07/2023" ,
+    "registryDedline": "20/07/2023",
+    "fee": 50,
+    "competitiorsLimit":500,
+    "requireQualify":false,
+    "email": "mbajsrowicz@gmail.com"
+  },
+  {
+    "id": 5,
+    "compName":"ABU DHABI GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - LONDON - PROFESSIONAL" ,
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+    "location": "Copper Box Arena, London, UK " ,
+    "date": "20/06/2023" ,
+    "registryDedline": "01/06/2023",
+    "fee": 90,
+    "competitiorsLimit":800,
+    "requireQualify":true,
+    "email": "mbajsrowicz@gmail.com"
+  },
+  {
+    "id": 6,
+    "compName":"GRAND SLAM JIU-JITSU WORLD TOUR 2022-2023 - Barcelona - PROFESSIONAL" ,
+    "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+    "location": "Pabellón Muixara, Barcelona, ES " ,
+    "date": "30/07/2023" ,
+    "registryDedline": "20/07/2023",
+    "fee": 50,
+    "competitiorsLimit":500,
+    "requireQualify":false,
+    "email": "mbajsrowicz@gmail.com"
   }
   ]

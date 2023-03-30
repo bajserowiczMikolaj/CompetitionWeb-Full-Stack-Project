@@ -50,9 +50,10 @@ public class CompetitionInitializer {
                 long fee = (long) competitionJSON.get("fee");
                 long competitiorsLimit = (long) competitionJSON.get("competitiorsLimit");
                 boolean requireQualify = (boolean) competitionJSON.get("requireQualify");
+                String email = (String) competitionJSON.get("email");
               //  LocalDate dateCreated = LocalDate.parse((String) competitionJSON.get("date_created"));
 
-                competitionRepository.addCompetition(new Competition(id,compName,imgURL,location,date,registryDedline,fee,competitiorsLimit,requireQualify));
+                competitionRepository.addCompetition(new Competition(id,compName,imgURL,location,date,registryDedline,fee,competitiorsLimit,requireQualify,email));
             }
 
         } catch (Exception e) {
