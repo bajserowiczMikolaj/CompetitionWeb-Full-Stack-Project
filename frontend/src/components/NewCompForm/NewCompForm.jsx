@@ -1,10 +1,6 @@
 import { useState } from "react";
 import "./NewCompForm.scss";
 
-/* 
-  Form styles borrowed from: 
-  https://codepen.io/banunn/pen/AFnal
-*/
 
 const NewCompetitionForm = ({ defaultFormState, handleSubmit, formTitle }) => {
   const [comps, setcomps] = useState(defaultFormState);
@@ -27,31 +23,60 @@ const NewCompetitionForm = ({ defaultFormState, handleSubmit, formTitle }) => {
         <input
           className="form-container__input"
           type="text"
-          placeholder="your name"
+          placeholder="place URL to comps Img"
           value={comps.createdBy}
-          onInput={event => setcomps({ ...comps, createdBy: event.target.value })}
+          onInput={event => setcomps({ ...comps, imgURL: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
-          placeholder="greeting"
+          placeholder="Comps name"
           value={comps.greeting}
-          onInput={event => setcomps({ ...comps, greeting: event.target.value })}
+          onInput={event => setcomps({ ...comps, compName: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
-          placeholder="origin country"
+          placeholder="Location"
           value={comps.originCountry}
-          onInput={event => setcomps({ ...comps, originCountry: event.target.value })}
+          onInput={event => setcomps({ ...comps, location: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
-          placeholder="nationality"
+          placeholder="Date"
           value={comps.nationality}
-          onInput={event => setcomps({ ...comps, nationality: event.target.value })}
+          onInput={event => setcomps({ ...comps, date: event.target.value })}
+         /> 
+         <input
+          className="form-container__input"
+          type="text"
+          placeholder="Registry Dedline"
+          value={comps.originCountry}
+          onInput={event => setcomps({ ...comps, registryDedline: event.target.value })}
         />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="Fee in £"
+          value={comps.nationality}
+          onInput={event => setcomps({ ...comps, fee: event.target.value })}
+        />
+        <input
+          className="form-container__input"
+          type="text"
+          placeholder="Competitors Limit"
+          value={comps.nationality}
+          onInput={event => setcomps({ ...comps, competitiorsLimit: event.target.value })}
+        />
+         <input
+          className="form-container__input"
+          type="text"
+          placeholder="Requare Points to Qualify: true or false"
+          value={comps.nationality}
+          onInput={event => setcomps({ ...comps, requireQualify: event.target.value })}
+        />
+        
         <button type="submit" className="form-container__button">
           Submit
         </button>

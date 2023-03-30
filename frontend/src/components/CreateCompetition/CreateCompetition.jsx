@@ -3,7 +3,7 @@ import NewCompetitionForm from "../NewCompForm/NewCompForm";
 
 const CreateCompetition = () => {
   const handleSubmit = async comps => {
-    const result = await fetch("http://localhost:8080/greeting", {
+    const result = await fetch("http://localhost:8080/competitions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,7 +19,7 @@ const CreateCompetition = () => {
     }
   };
 
-  const defaultFormState = { createdBy: "", greeting: "", originCountry: "", nationality: "" };
+  const defaultFormState = { imgURL: "", compName: "", location: "", date: "",registryDedline: "",fee: "" , competitiorsLimit : "", requireQualify: "" };
 
   return (
     <section className="create-greeting">

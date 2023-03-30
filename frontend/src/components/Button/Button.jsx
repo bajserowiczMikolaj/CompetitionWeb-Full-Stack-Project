@@ -1,10 +1,16 @@
-// import "./Button.scss";
-// import { Link } from 'react-router-dom';
+import "./Button.scss";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-// const Button = () => {
-//   return (
-//     <Link to="/new-competition">Add New Competition</Link>
-//   );
-// };
 
-// export default Button;
+const Button = () => {
+
+    const navigate =useNavigate();
+  return (
+    <div>
+<button className="button" onClick={()=>{navigate("/form");}}>Register Competition</button>
+    </div>
+  );
+};
+
+export default Button;

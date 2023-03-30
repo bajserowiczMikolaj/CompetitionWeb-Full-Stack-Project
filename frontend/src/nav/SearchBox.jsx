@@ -11,7 +11,7 @@ const SearchBox = ({handleSearch,}) => {
          id="searchbar"
         placeholder="" />
       </label>
-  {/* <Button /> */}
+  <Button />
     </div>
   )
 }
