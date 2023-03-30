@@ -18,6 +18,7 @@ public class CompetitionController {
     @PostMapping("/competitions")
     public Competition createCompetition(@RequestBody Competition competition){
         competitionRepository.addCompetition(competition);
+        // run email using competition.get email etc when registry
         return competition;
     }
 

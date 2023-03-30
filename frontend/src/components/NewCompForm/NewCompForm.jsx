@@ -24,57 +24,64 @@ const NewCompetitionForm = ({ defaultFormState, handleSubmit, formTitle }) => {
           className="form-container__input"
           type="text"
           placeholder="place URL to comps Img"
-          value={comps.createdBy}
+          value={comps.imgURL}
           onInput={event => setcomps({ ...comps, imgURL: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
           placeholder="Comps name"
-          value={comps.greeting}
+          value={comps.compName}
           onInput={event => setcomps({ ...comps, compName: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
           placeholder="Location"
-          value={comps.originCountry}
+          value={comps.location}
           onInput={event => setcomps({ ...comps, location: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
           placeholder="Date"
-          value={comps.nationality}
+          value={comps.date}
           onInput={event => setcomps({ ...comps, date: event.target.value })}
          /> 
          <input
           className="form-container__input"
           type="text"
           placeholder="Registry Dedline"
-          value={comps.originCountry}
+          value={comps.registryDedline}
           onInput={event => setcomps({ ...comps, registryDedline: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
           placeholder="Fee in £"
-          value={comps.nationality}
+          value={comps.fee}
           onInput={event => setcomps({ ...comps, fee: event.target.value })}
         />
         <input
           className="form-container__input"
           type="text"
           placeholder="Competitors Limit"
-          value={comps.nationality}
+          value={comps.competitiorsLimit}
           onInput={event => setcomps({ ...comps, competitiorsLimit: event.target.value })}
         />
          <input
           className="form-container__input"
           type="text"
           placeholder="Requare Points to Qualify: true or false"
-          value={comps.nationality}
+          value={comps.requireQualify}
           onInput={event => setcomps({ ...comps, requireQualify: event.target.value })}
+        />
+         <input
+          className="form-container__input"
+          type="text"
+          placeholder="Contact Email"
+          value={comps.email}
+          onInput={event => setcomps({ ...comps, email: event.target.value })}
         />
         
         <button type="submit" className="form-container__button">

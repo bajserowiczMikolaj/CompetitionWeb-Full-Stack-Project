@@ -1,9 +1,9 @@
 import './Home.scss';
-import CreateCompetition from '../CreateCompetition/CreateCompetition.jsx';
+
 import CompCardContainer from '../CompCardContainer/CompCardContainer.jsx';
 import SearchBox from '../../nav/SearchBox';
 import { useState,useEffect } from 'react';  
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+
       
 const Home=() => {
 
@@ -16,7 +16,7 @@ const Home=() => {
 
   const getComps = async () => {
 
-    let url = "http://localhost:8080/allCompetitions";
+    let url = "http://localhost:8080/competitions";
   
 
  if (search) {

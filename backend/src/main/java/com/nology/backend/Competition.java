@@ -13,8 +13,9 @@ public class Competition {
     private long fee;
     private long competitiorsLimit;
     private boolean requireQualify;
+    private String email;
 
-    public Competition(long id, String imgURL, String compName, String location, String date, String registryDedline, long fee, long competitiorsLimit, boolean requireQualify) {
+    public Competition(long id, String imgURL, String compName, String location, String date, String registryDedline, long fee, long competitiorsLimit, boolean requireQualify, String email) {
         this.id = id;
         this.imgURL = imgURL;
         this.compName = compName;
@@ -24,6 +25,14 @@ public class Competition {
         this.fee = fee;
         this.competitiorsLimit = competitiorsLimit;
         this.requireQualify = requireQualify;
+        this.email = email;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public long getId() {
