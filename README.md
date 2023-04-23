@@ -25,11 +25,6 @@ spring.datasource.url: The URL for your MySQL database.
 spring.datasource.username: The username for your MySQL database.
 spring.datasource.password: The password for your MySQL database.
 
-
-REACT_APP_API_URL: The URL for the backend API.
-Usage
-To create a competition, click on the "Create Competition" button on the main web page. Fill in the necessary information, such as the competition name, date, and location, and click the "Create" button.
-
 To sign up players for a competition, click on the "sign in" button on competition card you want to sign up for. Click on the "Sign Up" button and fill in the necessary information, such as the player name, age,belt, weight division. you will recive conformation email after register is complete. 
 
 ## Built with
