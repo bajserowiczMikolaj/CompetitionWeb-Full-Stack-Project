@@ -1,0 +1,74 @@
+[
+  {
+      "id": 1,
+      "imgURL":"https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+      "compName": "London Pro",
+      "location": "Copper Box Arena, London, UK ",
+      "date": "20/06/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 90,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  },
+  {
+      "id": 2,
+      "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+      "compName": "Espania Pro",
+      "location": "Pabellón Muixara, Barcelona, ES ",
+      "date": "30/07/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 50,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  },
+  {
+      "id": 3,
+      "imgURL": "https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/v1629790236/primary/drnylfcc23c2rb7uhcbt",
+      "compName": "Espaia PRo",
+      "location": "Copper Box Arena, London, UK ",
+      "date": "20/06/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 90,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  },
+  {
+      "id": 4,
+      "imgURL": "https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/v1629790236/primary/drnylfcc23c2rb7uhcbt",
+      "compName": "Espaia PRo",
+      "location": "Pabellón Muixara, Barcelona, ES ",
+      "date": "30/07/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 50,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  },
+  {
+      "id": 5,
+      "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+      "compName": "Espaia PRo",
+      "location": "Copper Box Arena, London, UK ",
+      "date": "20/06/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 90,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  },
+  {
+      "id": 6,
+      "imgURL": "https://ajptour.com/pictures/t/1063366-z5vi/ajp-tour-ukraine-national-jiu-jitsu-championship-2023-gi-no-gi.jpg",
+      "compName":"Espaia PRo",
+      "location": "Pabellón Muixara, Barcelona, ES ",
+      "date": "30/07/2023",
+      "registryDeadline": "30/07/2023",
+      "fee": 50,
+      "competitorLimit": 0,
+      "requireQualify": false,
+      "email": "mbajsrowicz@gmail.com"
+  }
+  ]
