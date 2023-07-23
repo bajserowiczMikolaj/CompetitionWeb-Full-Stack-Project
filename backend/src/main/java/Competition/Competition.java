@@ -1,29 +1,38 @@
-package com.nology.backend;
+package Competition;
 
-import java.util.Random;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity// it is used to represent a table in a database as a Java class.
 public class Competition {
 
-    private long id = new Random().nextLong();
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private long id;
     private String imgURL;
     private String compName;
     private String location;
     private String date;
-    private String registryDedline;
+    private String registryDeadline;
     private long fee;
-    private long competitiorsLimit;
+    private long competitorLimit;
     private boolean requireQualify;
     private String email;
 
-    public Competition(long id, String imgURL, String compName, String location, String date, String registryDedline, long fee, long competitiorsLimit, boolean requireQualify, String email) {
+    public Competition() {};
+
+
+    public Competition(long id, String imgURL, String compName, String location, String date, String registryDeadline, long fee, long competitorLimit, boolean requireQualify, String email) {
         this.id = id;
         this.imgURL = imgURL;
         this.compName = compName;
         this.location = location;
         this.date = date;
-        this.registryDedline = registryDedline;
+        this.registryDeadline = registryDeadline;
         this.fee = fee;
-        this.competitiorsLimit = competitiorsLimit;
+        this.competitorLimit = competitorLimit;
         this.requireQualify = requireQualify;
         this.email = email;
     }
@@ -75,12 +84,12 @@ public class Competition {
         this.date = date;
     }
 
-    public String getRegistryDedline() {
-        return registryDedline;
+    public String getRegistryDeadline() {
+        return registryDeadline;
     }
 
-    public void setRegistryDedline(String registryDedline) {
-        this.registryDedline = registryDedline;
+    public void setRegistryDeadline(String registryDeadline) {
+        this.registryDeadline = registryDeadline;
     }
 
     public long getFee() {
@@ -91,12 +100,12 @@ public class Competition {
         this.fee = fee;
     }
 
-    public long getCompetitiorsLimit() {
-        return competitiorsLimit;
+    public long getCompetitorLimit() {
+        return competitorLimit;
     }
 
-    public void setCompetitiorsLimit(long competitiorsLimit) {
-        this.competitiorsLimit = competitiorsLimit;
+    public void setCompetitorLimit(long competitorLimit) {
+        this.competitorLimit = competitorLimit;
     }
 
     public boolean isRequireQualify() {
@@ -106,4 +115,5 @@ public class Competition {
     public void setRequireQualify(boolean requireQualify) {
         this.requireQualify = requireQualify;
     }
+
 }
